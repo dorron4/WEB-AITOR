@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporte | Aitor Dorronsoro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ mobileMenuOpen: false }">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dorron_4/" target="_blank"><img src="img/deporte/instagram-w.svg"
+                        alt="Instagram"></a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4" target="_blank"><img
+                        src="img/deporte/linkedin-w.svg" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank"><img
+                        src="img/deporte/facebook-w.svg" alt="Facebook"></a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank"><img src="img/deporte/x-w.svg" alt="X"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/deporte/logo-aitor-dorronsoro-4.jpg" alt="Aitor Dorronsoro Logo">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="negocios.html">Negocios</a>
+                <a href="deporte.html">Deporte</a>
+                <a href="index.html#contacto">Contacto</a>
+                <div class="lang-selector">ES ▾</div>
+            </nav>
+
+            <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">
+                <span x-show="!mobileMenuOpen">☰</span>
+                <span x-show="mobileMenuOpen">✕</span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" x-show="mobileMenuOpen" x-transition>
+            <a href="index.html" @click="mobileMenuOpen = false">Inicio</a>
+            <a href="sobre-mi.html" @click="mobileMenuOpen = false">Sobre mí</a>
+            <a href="negocios.html" @click="mobileMenuOpen = false">Negocios</a>
+            <a href="deporte.html" @click="mobileMenuOpen = false">Deporte</a>
+            <a href="index.html#contacto" @click="mobileMenuOpen = false">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Deporte Content -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h1 class="title-medium">Un hobby y una pasión</h1>
+            <p class="subtitle-text" style="margin-bottom: 40px;">Trabaja como quien quieres ser y no como quien eres
+            </p>
+
+            <!-- Category Grid -->
+            <div class="category-grid">
+                <div class="category-box">
+                    <a href="entrenador.html">ENTRENADOR</a>
+                </div>
+                <div class="category-box">
+                    <a href="jugador.html">JUGADOR</a>
+                </div>
+                <div class="category-box">
+                    <a href="entrenador-personal.html">ENTRENADOR PERSONAL</a>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery-section">
+                <div class="gallery-grid gallery-4-col">
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/azpablosky-74.jpg"
+                            alt="Aitor arbitrando"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-1.jpg"
+                            alt="Jugando al fútbol"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-5-1.jpg"
+                            alt="Vestido de negro"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-6.jpg"
+                            alt="Con rayas amarillas"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-7.jpg"
+                            alt="Vestido de blanco"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-9.jpg" alt="Corriendo">
+                    </div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/futbol-11.jpg"
+                            alt="Chutando el balón"></div>
+                    <div class="gallery-item"><img src="Deporte - Aitor dorronsoro_files/save-20201031-133055.jpg"
+                            alt="Aitor corriendo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="Deporte - Aitor dorronsoro_files/logo-aitor-dorronsoro-4(1).jpg" alt="Aitor Dorronsoro"
+                    style="height: 60px;">
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/dorron_4/" target="_blank">Instagram</a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4"
+                    target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank">X</a>
+            </div>
+
+            <div class="footer-legal">
+                <a href="aviso-legal.html">Aviso legal</a>
+                <a href="politica-de-privacidad.html">Política de privacidad</a>
+                <a href="politica-de-cookies.html">Política de cookies</a>
+            </div>
+
+            <!-- Kit Digital Logos -->
+            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-ue-nextgeneration-black-positive.svg"
+                    alt="Financiado por la Unión Europea NextGenerationEU" style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-govern-black-positive.svg" alt="Gobierno de España"
+                    style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-logo-plan-black-positive.svg"
+                    alt="Plan de Recuperación, Transformación y Resilicencia" style="height: 40px;">
+            </div>
+
+            <p class="copyright">&copy; 2026 AITOR DORRONSORO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

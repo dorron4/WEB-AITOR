@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturelek | Aitor Dorronsoro</title>
+    <meta name="description"
+        content="Consultoría e ingeniería energética Naturelek. Soluciones para empresas y pymes.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ mobileMenuOpen: false }">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="social-icons">
+                <a href="tel:674501115" title="Teléfono de Aitor Dorronsoro"
+                    style="color: white; text-decoration: none; margin-right: 15px;">📞 674 50 11 15</a>
+                <a href="https://www.instagram.com/dorron_4/" target="_blank"><img src="img/instagram-w.svg"
+                        alt="Instagram"></a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4/" target="_blank"><img
+                        src="img/linkedin-w.svg" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank"><img src="img/facebook-w.svg"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank"><img src="img/x-w.svg" alt="X"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Aitor Dorronsoro _paginicial_exportado_files/logo-aitor-dorronsoro-4.jpg"
+                        alt="Aitor Dorronsoro Logo">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="negocios.html">Negocios</a>
+                <a href="deporte.html">Deporte</a>
+                <a href="index.html#contacto">Contacto</a>
+                <div class="lang-selector" x-data="{ open: false }" @click.away="open = false"
+                    style="position: relative; cursor: pointer; display: flex; align-items: center;">
+                    <div @click="open = !open">ES ▾</div>
+                    <div x-show="open"
+                        style="position: absolute; top: 100%; right: 0; background: #fff; padding: 10px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; flex-direction: column; gap: 8px; z-index: 100;">
+                        <a href="https://www.aitordorronsoro.com/en/business/"
+                            style="color: #000; text-decoration: none; font-size: 14px;">EN</a>
+                        <a href="https://www.aitordorronsoro.com/eu/negozioak/"
+                            style="color: #000; text-decoration: none; font-size: 14px;">EU</a>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">
+                <span x-show="!mobileMenuOpen">☰</span>
+                <span x-show="mobileMenuOpen">✕</span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" x-show="mobileMenuOpen" x-transition>
+            <a href="index.html" @click="mobileMenuOpen = false">Inicio</a>
+            <a href="sobre-mi.html" @click="mobileMenuOpen = false">Sobre mí</a>
+            <a href="negocios.html" @click="mobileMenuOpen = false">Negocios</a>
+            <a href="deporte.html" @click="mobileMenuOpen = false">Deporte</a>
+            <a href="index.html#contacto" @click="mobileMenuOpen = false">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Naturelek Intro -->
+    <section class="section" style="padding: 60px 0 30px;">
+        <div class="container text-center">
+            <h1 class="title-medium" style="margin-bottom: 10px;">Consultoría e ingeniería energética</h1>
+            <p class="subtitle-text" style="text-transform: none; font-weight: 600;">Naturelek</p>
+        </div>
+    </section>
+
+    <!-- Naturelek Content -->
+    <section class="bio-grid-internal">
+        <div class="bio-image-full" style="background: white; display: flex; align-items: center; justify-content: center; padding: 40px;">
+            <img src="img/25.png" alt="Naturelek Logo" style="width: 100%; max-width: 500px; height: auto; object-fit: contain;">
+        </div>
+        <div class="bio-text-content">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">Si el sector energético en España es uno de los sectores referentes en facturación y el Ibex35</h2>
+            <h3 style="font-size: 1.3rem; font-weight: 400; margin-bottom: 25px; line-height: 1.4;">¿Por qué no aprovechar a llevarse un trozo del pastel ayudando mayormente a empresas y pymes a ahorrar en sus facturas?</h3>
+            <p style="margin-bottom: 25px; line-height: 1.7; color: var(--text);">Director de expansión a nivel nacional de la consultoría energética Naturelek Consulting. Nos enfocamos en ayudar a grandes empresas y pymes en realizar un estudio integral de su punto de suministro con el fin de optimizar no solo el consumo energético con precios más asequibles con las diferentes comercializadoras con las que trabajamos, sino también de aplicar soluciones de ingeniería energética entre las cuales se encuentran cierres de mercado a futuros, baterías, condensadores y monitorización entre otras. A su misma vez buscamos profesionales con carteras de clientes amplias en empresas que busquen colaborar con la empresa como freelance y construir un activo que le genere una recurrencia anual por la fidelización de los clientes en la cartera</p>
+            
+            <div style="margin-top: 20px;">
+                <a href="https://api.whatsapp.com/send?phone=34674501115&text=%C2%A1Hola%20buenas!%20Te%20escribo%20ya%20que%20he%20observado%20en%20la%20secci%C3%B3n%20de%20negocios%20el%20apartado%20de%20Naturelek%20Consulting%20y%20me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n" target="_blank" class="btn-outline">CONTACTA CONMIGO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 60px;">
+        <div class="container footer-grid">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/dorron_4/" target="_blank">Instagram</a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4/"
+                    target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank">X</a>
+            </div>
+            <div class="footer-legal">
+                <a href="aviso-legal.html">Aviso Legal</a>
+                <a href="politica-de-privacidad.html">Privacidad</a>
+                <a href="politica-de-cookies.html">Cookies</a>
+                <a href="mapa-web.html">Mapa web</a>
+                <a href="accesibilidad.html">Accesibilidad</a>
+                <a href="javascript:document.dispatchEvent(new Event('cookienator:show-configurator'));">Configuración
+                    de cookies</a>
+            </div>
+            <div class="footer-eu-logos"
+                style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-ue-nextgeneration-black-positive.svg"
+                    alt="Financiado por la Unión Europea NextGenerationEU" style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-govern-black-positive.svg" alt="Gobierno de España"
+                    style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-logo-plan-black-positive.svg"
+                    alt="Plan de Recuperación, Transformación y Resilicencia" style="height: 40px;">
+            </div>
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="https://www.hooba.com/es/" target="_blank" title="Hooba web"
+                    style="color: #aaaaaa; text-decoration: none; font-size: 12px;">Desarrollado por Hooba</a>
+            </div>
+            <p class="copyright">&copy; 2026 AITOR DORRONSORO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

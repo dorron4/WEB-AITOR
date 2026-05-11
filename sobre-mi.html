@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Aitor Dorronsoro</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileMenuOpen: false }">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="social-icons">
+                <a href="#"><img src="img/sobre-mi/instagram-w.svg" alt="Instagram"></a>
+                <a href="#"><img src="img/sobre-mi/linkedin-w.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="img/sobre-mi/facebook-w.svg" alt="Facebook"></a>
+                <a href="#"><img src="img/sobre-mi/x-w.svg" alt="X"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/sobre-mi/logo-aitor-dorronsoro-4.jpg" alt="Aitor Dorronsoro Logo">
+                </a>
+            </div>
+            
+            <nav class="desktop-nav">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="index.html#negocios">Negocios</a>
+                <a href="index.html#deporte">Deporte</a>
+                <a href="index.html#contacto">Contacto</a>
+                <div class="lang-selector">ES ▾</div>
+            </nav>
+
+            <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">
+                <span x-show="!mobileMenuOpen">☰</span>
+                <span x-show="mobileMenuOpen">✕</span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" x-show="mobileMenuOpen" x-transition>
+            <a href="index.html" @click="mobileMenuOpen = false">Inicio</a>
+            <a href="sobre-mi.html" @click="mobileMenuOpen = false">Sobre mí</a>
+            <a href="index.html#negocios" @click="mobileMenuOpen = false">Negocios</a>
+            <a href="index.html#deporte" @click="mobileMenuOpen = false">Deporte</a>
+            <a href="index.html#contacto" @click="mobileMenuOpen = false">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Section 1: Sobre mi historia -->
+    <section class="bio-grid-internal">
+        <div class="bio-image-full">
+            <img src="Sobre mí - Aitor dorronsoro_files/foto-personal-5.jpg" alt="Aitor en la naturaleza">
+        </div>
+        <div class="bio-text-content">
+            <h1>Sobre mi historia</h1>
+            <p>Desde pequeño, fui un gran soñador con aspiraciones de ser futbolista o arquitecto, influenciado por la pasión por construir y jugar. Sin embargo, la crisis económica de 2008 y los mensajes negativos de mi entorno sobre la dificultad de vivir del fútbol o la arquitectura hicieron que renunciara a mis sueños y optara por seguir el camino tradicional: estudiar y buscar un trabajo “seguro”.</p>
+            <p>A pesar de adaptarme, mi carácter competitivo me llevó a destacar en el fútbol, llegando a ser ojeado por el Athletic Club de Bilbao. Más adelante, con 20 años, decidí emprender tras conocer una oportunidad de negocio que cambió mi vida. Aunque el camino del emprendimiento nunca fue fácil y perdí el apoyo de familia y amistades, mantuve mi determinación, guiado por la frase: “Aporta o aparta”. De esta forma he conseguido construir una estabilidad que me permite tener libertad y equilibrio entre tiempo y dinero. Esto hace que sea dueño de mi tiempo y esté enfocado en construir un activo que pueda de cara a futuro dejar un legado para futuras generaciones. Emprender no es un camino sencillo pero si muy gratificante porque aprendes habilidades sociales y profesionales que de otra forma jamás habrías podido tener. Hace que en el intento de construir un activo desarrolles tu mejor versión.</p>
+        </div>
+    </section>
+
+    <!-- Banner 1 -->
+    <section class="bg-primary-banner text-center">
+        <div class="container">
+            <h2 class="banner-text">No solo enseño a generar ingresos, enseño a transformar vidas.</h2>
+        </div>
+    </section>
+
+    <!-- Section 2: De la formación al propósito -->
+    <section class="bio-grid-internal" style="direction: rtl;">
+        <div class="bio-image-full" style="direction: ltr;">
+            <img src="Sobre mí - Aitor dorronsoro_files/foto-viaje-9.jpg" alt="Aitor en el mar">
+        </div>
+        <div class="bio-text-content" style="direction: ltr;">
+            <h2>De la formación al propósito: Un viaje hacia la libertad financiera</h2>
+            <p>Durante la pandemia de 2020, aproveché la situación para formarme y evolucionar. En ese proceso de transformación invertí tiempo en conocer de forma digital personas que tenían los resultados que yo buscaba y aprender de ellos. También desarrollé el hábito de la lectura para obtener conocimientos enfocados en educación financiera y desarrollo personal. En 2021, tras graduarme en CAFYD+EP decidí dedicarme en exclusiva a emprender como empresario y comencé mi andadura como inversor y comencé a formarme con traders profesionales. De ahí nacieron la comunidad gratuita Suite Investments enfocada a dar apoyo y logística a todos aquellos inversores que quisieran aprender desde 0 y aumentar sus conocimientos del trading y, por otro lado, la marca empresarial TUBEE.ES junto a otros 2 socios, centrada en apoyar a otros emprendedores.</p>
+            <p>Un punto clave en mi transformación fue leer el libro Padre Rico, Padre Pobre, que me enseñó la importancia de la libertad financiera y no cambiar tiempo por dinero, sino hacer que el dinero trabajase para ti construyendo activos que te generen ingresos pasivos. Ahora, mi objetivo es transmitir ese conocimiento y ayudar a otros a transformar sus vidas, recordando que su historia no lo hace mejor ni peor que nadie, simplemente lo define y que son dueños de su destino.</p>
+            
+            <ul class="achievement-list">
+                <li>Empresario: 7 años en E-Commerce</li>
+                <li>Inversor y trader en mercados emergentes</li>
+                <li>Cofundador de la Marca Empresarial TUBEE.ES</li>
+                <li>Cofundador y partner de Suite Investments</li>
+                <li>Desarrollador de proyectos blockchain</li>
+                <li>Futbolista Semiprofesional</li>
+                <li>Profesor particular de idiomas en edad primaria</li>
+                <li>Graduado en C.A.F.Y.D + E.P por la Universidad de Deusto</li>
+                <li>Entrenador de fútbol (Nivel 3)</li>
+                <li>Analista semiprofesional de fútbol</li>
+                <li>Estudiante del Master de Blockchain y Criptoactivos en IEBS</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Banner 2: Vision -->
+    <section class="bg-primary-banner text-center">
+        <div class="container">
+            <p class="vision-text">"Mi visión es construir una gran comunidad basada en la confianza, el conocimiento y el crecimiento mutuo. Quiero ser recordado no solo por lo que pueda lograr, sino por cómo lo hice: con determinación, perseverancia, resiliencia y compromiso."</p>
+        </div>
+    </section>
+
+    <!-- Section 3: Gallery -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/foto-futbol-2.jpg" alt="Campo de fútbol"></div>
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/foto-viaje-6.jpg" alt="Aitor de viaje"></div>
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/foto-viaje-18.jpg" alt="Aitor con vistas"></div>
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/img-20241224-wa0064.jpg" alt="Aitor en la montaña"></div>
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/img20240729132351.jpg" alt="Aitor trabajando"></div>
+            <div class="gallery-item"><img src="Sobre mí - Aitor dorronsoro_files/img20240630123414.jpg" alt="Aitor en el parque de atracciones"></div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 100px;">
+        <div class="container footer-grid">
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2026 AITOR DORRONSORO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

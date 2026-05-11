@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitor Dorronsoro | Marketing, salud y asesoría para crecer</title>
+    <meta name="description"
+        content="Sitio web oficial de Aitor Dorronsoro. Consultoría, Deporte, Marketing y Salud para tu negocio.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ mobileMenuOpen: false }">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dorron_4/" target="_blank"><img src="img/index/instagram-w.svg"
+                        alt="Instagram"></a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4/" target="_blank"><img
+                        src="img/index/linkedin-w.svg" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank"><img src="img/index/facebook-w.svg"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank"><img src="img/index/x-w.svg" alt="X"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Aitor Dorronsoro _paginicial_exportado_files/logo-aitor-dorronsoro-4.jpg"
+                        alt="Aitor Dorronsoro Logo">
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="negocios.html">Negocios</a>
+                <a href="deporte.html">Deporte</a>
+                <a href="#contacto">Contacto</a>
+                <div class="lang-selector">ES ▾</div>
+            </nav>
+
+            <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">
+                <span x-show="!mobileMenuOpen">☰</span>
+                <span x-show="mobileMenuOpen">✕</span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" x-show="mobileMenuOpen" x-transition>
+            <a href="index.html" @click="mobileMenuOpen = false">Inicio</a>
+            <a href="sobre-mi.html" @click="mobileMenuOpen = false">Sobre mí</a>
+            <a href="negocios.html" @click="mobileMenuOpen = false">Negocios</a>
+            <a href="deporte.html" @click="mobileMenuOpen = false">Deporte</a>
+            <a href="#contacto" @click="mobileMenuOpen = false">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <p class="hero-label">AITOR DORRONSORO</p>
+            <h1>Marketing, salud y asesoría para crecer</h1>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="sobre-mi" class="section bio-section">
+        <div class="container bio-grid">
+            <div class="bio-image">
+                <img src="Aitor Dorronsoro _paginicial_exportado_files/mask-group-1.png" alt="Aitor Dorronsoro"
+                    class="overlap-image">
+            </div>
+            <div class="bio-text">
+                <h2>De soñador a emprendedor</h2>
+                <p class="intro">Transforma tu vida desde el propósito</p>
+                <p>Dejé atrás el camino "seguro" para construir el mío propio. Hoy ayudo a personas como tú a tomar el
+                    control de sus finanzas, emprender con sentido y vivir con libertad. Si buscas algo más que un
+                    trabajo: bienvenido, estás en el lugar correcto.</p>
+                <a href="negocios.html" class="btn-outline">IMPULSA TU NEGOCIO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Ticker -->
+    <div class="marquee-ticker">
+        <div class="marquee-content">
+            <span>Transforma tus gastos en ingresos, tu negocio en una máquina digital y tu salud en tu mejor inversión.
+                • </span>
+            <span>Transforma tus gastos en ingresos, tu negocio en una máquina digital y tu salud en tu mejor inversión.
+                • </span>
+        </div>
+    </div>
+
+    <!-- Info Banner -->
+    <section class="section-sm">
+        <div class="container text-center">
+            <h2 class="title-medium">El mejor modo de predecir el futuro es creándolo uno mismo</h2>
+            <p class="subtitle-text">Aquellos que están tan locos como para creer que pueden cambiar el mundo son
+                aquellos que finalmente lo acaban haciendo</p>
+        </div>
+    </section>
+
+    <!-- Services Grid (6 Cards) -->
+    <section id="negocios" class="section services">
+        <div class="container">
+            <div class="grid-services">
+                <!-- Card 1 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/collaboration-ux-developer-and-ui-designer-brainst-2025-01-10-12-47-52-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>MARKETING DIGITAL</h3>
+                            <p>Si la mente lo puede ver, se puede crear</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/stethoscope-auriscope-blood-pressure-gauge-on-de-2025-04-04-17-34-05-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>SALUD PREVENTIVA</h3>
+                            <p>Si te parece caro cuidarte, imagínate curar la enfermedad</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/multiracial-young-creative-people-in-modern-office-2025-02-11-02-08-58-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>ASESORÍA INTEGRAL SERVICIOS</h3>
+                            <p>O pagas facturas, o pagar y cobrar de ellas</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/modern-creative-workplace-2025-02-10-10-21-48-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>ASESORÍA DE TELEFONÍA MÓVIL</h3>
+                            <p>Lo barato a veces sale caro. Paga por servicio, no por precio.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/cropped-picture-of-engineers-at-office-working-on-2025-04-03-19-45-16-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>CONSULTORÍA E INGENIERÍA ENERGÉTICA</h3>
+                            <p>La independencia energética empieza desde una buena estrategia</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 6 -->
+                <div class="service-card"
+                    style="background-image: url('img/index/business-women-2025-02-03-09-58-27-utc.jpg')">
+                    <a href="negocios.html" class="service-card-link">
+                        <div class="service-card-content">
+                            <h3>FORMADOR Y COACHING</h3>
+                            <p>O pagas por aprender a un profesional o tú moneda de cambio será tu tiempo aprendiendo
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success CTA -->
+    <section class="cta-banner">
+        <div class="container text-center">
+            <h3>Si buscas el éxito empresarial, va unido de la mano a cuantas personas has ayudado por el camino.</h3>
+            <a href="negocios.html" class="btn-outline-white">VER CÓMO PUEDO AYUDARTE</a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contacto" class="section contact-section">
+        <div class="container contact-split">
+            <div class="contact-info">
+                <h2>Si has llegado hasta aquí es porque consideras que puedo ayudarte</h2>
+                <p>Deja tus datos y me pondré en contacto contigo para llegar a una sinergia.</p>
+                <div class="contact-meta">
+                    <p><strong>AITOR DORRONSORO</strong></p>
+                    <p>📍 Bizkaia</p>
+                    <p>📞 674501115</p>
+                    <p>📧 aitordorronsoro4@gmail.com</p>
+                    <p>🕐 Disponibilidad de lunes a viernes.</p>
+                </div>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                <div class="form-row">
+                    <label>Nombre y apellidos*</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label>Número de teléfono</label>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="form-row">
+                    <label>Correo electrónico*</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label>Mensaje*</label>
+                    <textarea name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-row checkbox-group">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Acepto la política de privacidad</label>
+                </div>
+                <button type="submit" class="btn-form">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/dorron_4/" target="_blank">Instagram</a>
+                <a href="https://es.linkedin.com/in/aitor-dorronsoro-gonz%C3%A1lez-59771a1b4/"
+                    target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/aitordorronsoro4" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/dorron_5/" target="_blank">X</a>
+            </div>
+            <div class="footer-legal">
+                <a href="aviso-legal.html">Aviso Legal</a>
+                <a href="politica-de-privacidad.html">Privacidad</a>
+                <a href="politica-de-cookies.html">Cookies</a>
+            </div>
+            <div class="footer-eu-logos"
+                style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-ue-nextgeneration-black-positive.svg"
+                    alt="Financiado por la Unión Europea NextGenerationEU" style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-govern-black-positive.svg" alt="Gobierno de España"
+                    style="height: 40px;">
+                <img src="Deporte - Aitor dorronsoro_files/kd-logo-plan-black-positive.svg"
+                    alt="Plan de Recuperación, Transformación y Resilicencia" style="height: 40px;">
+            </div>
+            <p class="copyright">&copy; 2026 AITOR DORRONSORO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
