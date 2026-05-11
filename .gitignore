@@ -1,0 +1,6 @@
+_BACKUP_ORIGINAL/
+.git/
+scratch/
+deploy*.ps1
+full_deploy.ps1
+ftp_list*.ps1
